@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+    android:id="@+id/sryt_swipe_listview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <com.common.refresh.MyScrollview
+            android:id="@+id/sc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="fasdkjgas;dgsadg"
+                    />
+                <com.test.pulltorefresh.ListViewInScrollView
+                    android:id="@+id/lv_swipe_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:dividerHeight="0.1dp"
+                    android:background="@android:color/white"
+                    android:divider="#b0b0b0"
+                    android:choiceMode="singleChoice"
+                    android:fadingEdge="none"
+                    android:scrollbarStyle="outsideOverlay" />
+
+            </LinearLayout>
+        </com.common.refresh.MyScrollview>
+
+
+</android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>
